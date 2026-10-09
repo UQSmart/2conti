@@ -1,0 +1,16 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      # Cron includes weekends; Dependabot's daily interval only runs weekdays.
+      interval: cron
+      cronjob: "0 9 * * *"
+      timezone: Europe/Rome
+
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: cron
+      cronjob: "0 9 * * *"
+      timezone: Europe/Rome
