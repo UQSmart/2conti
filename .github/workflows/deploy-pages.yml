@@ -47,7 +47,7 @@ jobs:
       # GITHUB_TOKEN pushes do not trigger branch-based Pages builds.
       # Deploy the same bundle explicitly, while keeping it in gh-pages.
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./dist
 
